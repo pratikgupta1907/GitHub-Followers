@@ -61,7 +61,6 @@ class GFAlertVC: UIViewController {
         containerView.addSubview(titleLabel)
         
         titleLabel.text = alertTitle ?? "Something went wrong"
-        titleLabel.textAlignment = .center
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: padding),
             titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
@@ -87,7 +86,6 @@ class GFAlertVC: UIViewController {
     
     func configureMessageLabel() {
         containerView.addSubview(messageLabel)
-        messageLabel.textAlignment = .center
         messageLabel.text = message ?? "Unable to complete reguest"
         messageLabel.numberOfLines = 4
         

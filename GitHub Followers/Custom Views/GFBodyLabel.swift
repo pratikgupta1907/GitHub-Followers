@@ -20,7 +20,7 @@ class GFBodyLabel: UILabel {
     
     convenience init(textAllignment: NSTextAlignment) {
         self.init(frame: .zero)
-        self.textAlignment = textAlignment
+        self.textAlignment = textAllignment
        // configure()
     }
     
