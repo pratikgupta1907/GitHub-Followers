@@ -13,7 +13,8 @@
 		7C986595263D409B001C04B5 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C986594263D409B001C04B5 /* Follower.swift */; };
 		7C986598263D40E4001C04B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C986597263D40E4001C04B5 /* User.swift */; };
 		7C98659C263D42DB001C04B5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C98659B263D42DB001C04B5 /* NetworkManager.swift */; };
-		7C9865A0263D42EA001C04B5 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C98659F263D42EA001C04B5 /* ErrorMessage.swift */; };
+		7C9865A0263D42EA001C04B5 /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C98659F263D42EA001C04B5 /* GFError.swift */; };
+		7C9F4276263E8AAE00ABC8D0 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F4275263E8AAE00ABC8D0 /* FollowerCell.swift */; };
 		7CF7C511263AA9E2001B554E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF7C510263AA9E2001B554E /* AppDelegate.swift */; };
 		7CF7C513263AA9E2001B554E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF7C512263AA9E2001B554E /* SceneDelegate.swift */; };
 		7CF7C51A263AA9E9001B554E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF7C519263AA9E9001B554E /* Assets.xcassets */; };
@@ -35,7 +36,8 @@
 		7C986594263D409B001C04B5 /* Follower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		7C986597263D40E4001C04B5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7C98659B263D42DB001C04B5 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		7C98659F263D42EA001C04B5 /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		7C98659F263D42EA001C04B5 /* GFError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
+		7C9F4275263E8AAE00ABC8D0 /* FollowerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		7CF7C50D263AA9E2001B554E /* GitHub Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF7C510263AA9E2001B554E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CF7C512263AA9E2001B554E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		7C47CEFB263C435F00E0D77F /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				7C9F4274263E8AAE00ABC8D0 /* Cells */,
 				7C47CEF4263C349E00E0D77F /* GFAlertVC.swift */,
 				7CF7C543263AEEF8001B554E /* GFTextField.swift */,
 				7CF7C540263AEB37001B554E /* GFButton.swift */,
@@ -123,9 +126,17 @@
 		7C98659E263D42EA001C04B5 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				7C98659F263D42EA001C04B5 /* ErrorMessage.swift */,
+				7C98659F263D42EA001C04B5 /* GFError.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7C9F4274263E8AAE00ABC8D0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7C9F4275263E8AAE00ABC8D0 /* FollowerCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		7CF7C504263AA9E2001B554E = {
@@ -240,7 +251,8 @@
 				7C47CEF8263C3C3800E0D77F /* UIViewController+Ext.swift in Sources */,
 				7CF7C511263AA9E2001B554E /* AppDelegate.swift in Sources */,
 				7C47CEF5263C349E00E0D77F /* GFAlertVC.swift in Sources */,
-				7C9865A0263D42EA001C04B5 /* ErrorMessage.swift in Sources */,
+				7C9F4276263E8AAE00ABC8D0 /* FollowerCell.swift in Sources */,
+				7C9865A0263D42EA001C04B5 /* GFError.swift in Sources */,
 				7C47CEF1263C1FBD00E0D77F /* GFBodyLabel.swift in Sources */,
 				7C986595263D409B001C04B5 /* Follower.swift in Sources */,
 				7CF7C552263BE32E001B554E /* GFTitleLabel.swift in Sources */,
